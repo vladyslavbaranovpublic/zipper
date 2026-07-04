@@ -31,7 +31,11 @@ Makefile.local
 coverage/
 
 # Editor and OS files
-.vscode/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/settings.json
+!.vscode/tasks.json
 .idea/
 *.swp
 *.swo
