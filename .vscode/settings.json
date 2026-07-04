@@ -2,6 +2,20 @@
     "C_Cpp.default.compilerPath": "C:/mingw64/bin/gcc.exe",
     "C_Cpp.default.cStandard": "c11",
     "C_Cpp.default.includePath": [
+        "${workspaceFolder}/include",
+        "${workspaceFolder}/src"
+    ],
+    "C_Cpp.default.browse.path": [
+        "${workspaceFolder}/include",
+        "${workspaceFolder}/src"
+    ],
+    "C_Cpp_Runner.cCompilerPath": "gcc",
+    "C_Cpp_Runner.debuggerPath": "gdb",
+    "C_Cpp_Runner.useMsvc": false,
+    "C_Cpp_Runner.compilerArgs": [
+        "-I${workspaceFolder}/include"
+    ],
+    "C_Cpp_Runner.includePaths": [
         "${workspaceFolder}/include"
     ],
     "files.associations": {

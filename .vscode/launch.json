@@ -1,19 +1,39 @@
 {
-    "version": "0.2.0",
-    "configurations": [
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug zipper",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/zipper.exe",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "miDebuggerPath": "C:/mingw64/bin/gdb.exe",
+      "preLaunchTask": "Build zipper"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "${workspaceFolder}",
+      "program": "${workspaceFolder}/build/zipper.exe",
+      "MIMode": "gdb",
+      "miDebuggerPath": "C:/mingw64/bin/gdb.exe",
+      "preLaunchTask": "Build zipper",
+      "setupCommands": [
         {
-            "name": "Debug zipper",
-            "type": "cppdbg",
-            "request": "launch",
-            "program": "${workspaceFolder}/build/zipper.exe",
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "${workspaceFolder}",
-            "environment": [],
-            "externalConsole": false,
-            "MIMode": "gdb",
-            "miDebuggerPath": "C:/mingw64/bin/gdb.exe",
-            "preLaunchTask": "Build zipper"
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
         }
-    ]
+      ]
+    }
+  ]
 }
